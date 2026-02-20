@@ -26,9 +26,7 @@ class ShowingSeeder extends Seeder
                 'hall_id' => $hall1->id,
                 'movie_id' => $movie->id,
                 'start_time' => $start1,
-                'ends_at' => $start1->copy()->addMinutes($movie->duration_minutes),
-                'price_standard' => 350,
-                'price_vip' => 550,
+                'end_time' => $start1->copy()->addMinutes($movie->duration_minutes),
             ]);
 
             $start2 = $today->copy()->setTime(18 + $i * 1, 40);
@@ -36,9 +34,7 @@ class ShowingSeeder extends Seeder
                 'hall_id' => $hall1->id,
                 'movie_id' => $movie->id,
                 'start_time' => $start2,
-                'ends_at' => $start2->copy()->addMinutes($movie->duration_minutes),
-                'price_standard' => 400,
-                'price_vip' => 650,
+                'end_time' => $start2->copy()->addMinutes($movie->duration_minutes),
             ]);
 
             // Зал 2
@@ -47,9 +43,7 @@ class ShowingSeeder extends Seeder
                 'hall_id' => $hall2->id,
                 'movie_id' => $movie->id,
                 'start_time' => $start3,
-                'ends_at' => $start3->copy()->addMinutes($movie->duration_minutes),
-                'price_standard' => 300,
-                'price_vip' => 500,
+                'end_time' => $start3->copy()->addMinutes($movie->duration_minutes),
             ]);
         }
     }
