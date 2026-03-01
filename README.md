@@ -50,11 +50,11 @@
 
 - composer install -vvv
 - переименовываем .env.example в .env
-- php ./vendor/bin/sail up -d
-- docker exec -it fs-2-diplom-laravel.test-1 bash
+- bash ./vendor/bin/sail up -d
+- docker exec -it fs_2_diplom-laravel.test-1 bash
 - php artisan migrate
 - php artisan db:seed
-
+gi
 открываем проект localhost
 открываем админ панель localhost/admin
 
