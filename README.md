@@ -47,14 +47,14 @@
 В результате работы должен получиться git-репозиторий, содержащий в себе необходимые файлы проекта и файл ReadMe. В нём должна быть инструкция, как запустить ваш проект, технические особенности: версия php, процедура миграции базы данных и другое.
 
 
-
-- composer install -vvv
 - переименовываем .env.example в .env
+- composer install -vvv
 - bash ./vendor/bin/sail up -d
-- docker exec -it fs_2_diplom-laravel.test-1 bash
+- docker exec -it diplom-laravel.test-1 bash
+- php artisan key:generate
 - php artisan migrate
 - php artisan db:seed
-gi
+
 открываем проект localhost
 открываем админ панель localhost/admin
 
