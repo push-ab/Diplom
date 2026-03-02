@@ -50,6 +50,7 @@
 - переименовываем .env.example в .env
 - composer install -vvv
 - bash ./vendor/bin/sail up -d
+- ждем какое-то время пока всем поднимется
 - docker exec -it diplom-laravel.test-1 bash
 - php artisan key:generate
 - php artisan migrate
