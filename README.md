@@ -55,8 +55,8 @@
 - php artisan migrate
 - php artisan db:seed
 
-открываем проект localhost
-открываем админ панель localhost/admin
+открываем проект http://localhost
+открываем админ панель http://localhost/admin/login
 
 Входим в админку по заготовленому логинку и паролю из сидов.
 - логин: admin@example.com
