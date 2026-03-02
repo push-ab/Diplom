@@ -56,7 +56,7 @@
 - php artisan db:seed
 
 открываем проект http://localhost
-открываем админ панель http://localhost/admin/login
+открываем форму для входа в админ панель http://localhost/admin/login
 
 Входим в админку по заготовленому логинку и паролю из сидов.
 - логин: admin@example.com
